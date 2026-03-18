@@ -1,0 +1,19 @@
+
+.hera h3 {
+    color: #7de461;
+    font-size: 25px;                /*taille du texte*/
+}
+.hera img {
+    width: 280px;
+    height: 180px;
+    border-radius: 20px;
+}
+.btn-projet {
+    margin-top: 30px;               /*Espace entre bouton est l'image*/
+    padding: 15px;                  /*TAILLE DU BOUTON */
+    background-color: #38bdf8;
+    color: white;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.8s;               /*transitiion des bouton a l'arriver*/
+}

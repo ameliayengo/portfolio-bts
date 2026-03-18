@@ -1,118 +1,52 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Segoe UI', sans-serif;
-}
-
-body {
+/*banderole du haut*/
+body {      
     background-color: #050e61f6;
+    margin: 0;
 }
-
-/* NAVBAR */
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 60px;
-    background: rgba(59, 60, 65, 0);
-    z-index: 100;
-}
-
-.logo {
-    font-size: 20px;
+.logo {                                  /*AMELIA YENGO du haut */
+    font-size: 30px;
     color: #5eb857;
 }
-
-.nav-link {
-    list-style: none;
+.banderole {                              /*banderole du haut */
+    position: fixed;    
+    width: 95%;
     display: flex;
-    gap: 35px;
+    justify-content: space-between;
+    padding: 20px 40px;                    /*20px=espace du haut & 60px=espace sur coté */
+    z-index: 100;                          /* définir l’ordre d’empilement*/
+}
+.banderole-link {
+    list-style: none;                     /*supprimer le style par défaut d'une liste,*/
+    display: flex;
+    gap: 40px;                            /*définir l’espace entre liens*/
 }
 
-.nav-link a {
+.banderole-link a {
     text-decoration: none;
+    font-size: 20px;
     color: #5eb857;
     font-weight: 700;
 }
 
-/* HERO */
-.hero {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    padding-top: 80px;
-    position: relative;
-}
-
-.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-}
-
-.hero h1,
-.hero p,
-.hero .btn {
-    position: relative;
-    z-index: 1;
-}
-
-.hero h1 {
-    font-size: 48px;
-    color: #0e5cc9;
-    margin-bottom: 15px;
-}
-
-.hero p {
-    font-size: 18px;
-    color: #94a3b8;
-    margin-bottom: 15px;
-}
-
-/* BOUTON */
-.btn {
-    padding: 16px 50px;
-    background: #38bdf8;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: 0.6s;
-    border: none;
-}
-
-.btn:hover {
-    background: #0ea5e9;
-}
-
-/* FOOTER */
+/* banderole du bas */
 .motivation {
-    width: 100%;
+    width: 100%;                         /*la banderole du bas prend tout la longeur*/
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
     background: rgba(22, 31, 55, 0.704);
-    border-bottom: 5px solid #5973a1;
+    
 }
 
 .nav-links .img {
+    text-decoration: none;
     width: 40px;
     height: 40px;
-    margin: 0 1rem;
     object-fit: cover;
+    margin: 10px;
     border-radius: 50%;
+
 }
 
 .motivation .bas {
@@ -125,49 +59,10 @@ body {
 
 .motivation .caca {
     color: #f9f2f9;
+
 }
-.her {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
-.her p {
-    font-size: 18px;
-    color: #94a3b8;
-    margin-bottom: 10px;
-}
-.hero-content {
-   display: flex;           
-    flex-direction: row;    
-    justify-content: flex-end; 
-    align-items: center;     /
-    gap : 50px;              
-    max-width: 1100px;
-}
-.texte {
-    max-width: 600px;         
-    background: rgba(13, 12, 12, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    color: #fff;
-    text-align: left;
-}
-.photo-colonne .img {
-    width: 280px;  
-    height: 180px;  
-    object-fit: cover;
-    border-radius: 10px;
-}
-.photo-colonne {
-    display: flex;
-    flex-direction: column;
-    gap: 17px; 
-}
+
+
 .hera {
     min-height: 100vh; 
     width: 100%;
@@ -193,6 +88,7 @@ body {
     height: 180px;
     object-fit: cover;
     border-radius: 20px;
+
 }
 .btn-projet {
     margin-top: 10px;
@@ -221,7 +117,7 @@ body {
     max-width: 600px;
     font-size: 16px;
     line-height: 1.7;
-    color: white;
+    color: #fbfbfb;
     background: rgba(0, 0, 0, 0.6);
     padding: 25px;
     border-radius: 15px;

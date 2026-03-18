@@ -1,0 +1,40 @@
+/*PAGE D'ACCEUIL*/
+.acceuil {
+    height: 100vh;                         /* La hauteur est 100% de la hauteur de la fenêtre */
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;                  /* banderole bleu au centre btn */
+}
+.acceuil::before {                       /*sélectionne un élément avec la classe acceuil crée un élément avant le contenu*/
+    content: "";                         /*Obligatoire pour que ::before fonctionne   "" = Sert juste à créer l’élément*/
+    position: absolute;                     /*L’élément se fixe par rapport à l’écran*/
+    inset: 0;                            /*L’élément prend toute la largeur et hauteur de l’écran.*/
+    background: rgba(0, 0, 0, 0.5);    /*Noir avec 50% de transparence*/
+}
+.acceuil h1 {
+    position: relative;                 /*éclairci les texte */
+    font-size: 48px;
+    color: #5eb857;
+    margin-bottom: 0px;
+}
+.acceuil p {
+    position: relative;                 /*éclairci les texte */
+    font-size: 20px;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+.btn {
+    text-decoration: none;              /*enlever le trait sous le texte*/
+    position: relative;                /*éclairci les texte */
+    padding: 15px 40px;                /* 15p pour le haut du btn 40 pour la largeur du btn */
+    background: #38bdf8;
+    border-radius: 20px;                /*arrondit les bord */
+    transition: 0.6s;                   /* effet de grandissemnt qui mets 0.8s */
+}
+.btn:hover {
+    background: #0877aa;              /* change de couleur quand on appuie sur btn */
+}

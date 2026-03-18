@@ -1,0 +1,20 @@
+.texte-img {
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+    gap: 80px;
+    color: #fbfbfb;
+}
+.texte-img .image {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* espace entre image et texte */
+    max-width: 900px;
+}
+
+.texte-img img {
+    width: 280px;
+    height: 180px;
+    border-radius: 20px;
+}
