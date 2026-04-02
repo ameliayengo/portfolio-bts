@@ -3,21 +3,21 @@
     background-size: cover;
     background-position: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 60px 60px;
+    justify-content: center; /* centre horizontal */
+    align-items: flex-end;   /* descend en bas */
+    padding-bottom: 20px;    /* petit espace du bas */
+
 }
 .her .texte {
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.562);
     border-radius: 15px;
-    padding: 30px 40px;
+    padding: 20px 50px;
     max-width: 800px;
 }
+
 .her p {
     font-size: 18px;
     color: #fbfdfc;
-    line-height: 1.8;
 }
 
 /* ===========================
@@ -26,12 +26,15 @@
 @media (max-width: 768px) {
     .her {
         padding: 90px 20px 50px;
-        align-items: flex-start;
+        align-items: flex-end; /* en bas */
+        justify-content: center; /* centré horizontal */
     }
+
     .her .texte {
         padding: 20px;
-        text-align: left;
+        text-align: center; /* texte centré */
     }
+
     .her p {
         font-size: 14px;
         line-height: 1.6;

@@ -8,6 +8,7 @@ body {
     background-color: #050e61f6;
     overflow-x: hidden;
     font-family: sans-serif;
+    
 }
 img {
     max-width: 100%;
@@ -15,9 +16,6 @@ img {
     display: block;
 }
 
-/* ===========================
-   HEADER / BANDEROLE
-=========================== */
 .banderole {
     position: fixed;
     top: 0;
