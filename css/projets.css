@@ -1,19 +1,43 @@
-
 .hera h3 {
     color: #7de461;
-    font-size: 25px;                /*taille du texte*/
+    font-size: 22px;
+    text-align: center;
 }
 .hera img {
     width: 280px;
     height: 180px;
+    object-fit: cover;
     border-radius: 20px;
 }
 .btn-projet {
-    margin-top: 30px;               /*Espace entre bouton est l'image*/
-    padding: 15px;                  /*TAILLE DU BOUTON */
+    margin-top: 20px;
+    padding: 12px 25px;
     background-color: #38bdf8;
     color: white;
     text-decoration: none;
     border-radius: 20px;
-    transition: 0.8s;               /*transitiion des bouton a l'arriver*/
+    transition: 0.8s;
+    font-weight: 700;
+}
+.btn-projet:hover {
+    background-color: #0877aa;
+}
+
+/* ===========================
+   RESPONSIVE MOBILE
+=========================== */
+@media (max-width: 768px) {
+    .hera h3 {
+        font-size: 16px;
+    }
+    .hera img {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+    }
+    .btn-projet {
+        margin-top: 12px;
+        padding: 10px 20px;
+        font-size: 13px;
+    }
 }

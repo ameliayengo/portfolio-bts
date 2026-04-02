@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu | Yengo Amelia</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/menu.css">
-
 </head>
-
 <body>
 
 <header class="banderole">
     <div class="logo"><strong>AMELIA YENGO</strong></div>
-
     <nav>
         <ul class="banderole-link">
-            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="alternance.html">Alternance</a></li>
             <li><a href="projets.html">Projets</a></li>
             <li><a href="veille.html">Veille technologique</a></li>
@@ -24,47 +21,60 @@
             <li><a href="cv.pdf" target="_blank">CV</a></li>
         </ul>
     </nav>
+    <button class="burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+    </button>
 </header>
 
-
+<div class="nav-mobile" id="navMobile">
+    <a href="index.html">Accueil</a>
+    <a href="alternance.html">Alternance</a>
+    <a href="projets.html">Projets</a>
+    <a href="veille.html">Veille technologique</a>
+    <a href="competence.pdf" target="_blank">Compétences</a>
+    <a href="cv.pdf" target="_blank">CV</a>
+</div>
 
 <main>
-
     <section class="acceuil" style="background-image: url('img/fond.jpg');">
-
         <h1>DÉVELOPPEUSE BTS SIO</h1>
         <p><strong>PORTFOLIO</strong></p>
         <a href="btn.html" class="btn"><strong>A PROPOS DE MOI</strong></a>
-
     </section>
-
 </main>
 
-
 <footer class="motivation">
-
     <ul class="nav-links">
         <a href="mailto:amelia.yengo@afip-formations" target="_blank">
-            <img class="img" src="img/outlook.jpg" alt="">
+            <img class="img" src="img/outlook.jpg" alt="mail">
         </a>
-
         <a href="https://www.linkedin.com/">
-            <img class="img" src="img/lind.jpg" alt="">
+            <img class="img" src="img/lind.jpg" alt="linkedin">
         </a>
-
-        <a href="https://github.com/ameliaengo">
-            <img class="img" src="img/git.jpg" alt="">
+        <a href="https://github.com/ameliayengo">
+            <img class="img" src="img/git.jpg" alt="github">
         </a>
     </ul>
-
     <div class="bas">
         <strong>CENTRE DE FORMATION :</strong><br>
         <div class="coucou">AFIP LYON</div>
         <div class="caca">40 Rue des Antonins, 69100 Villeurbanne</div>
     </div>
-
 </footer>
 
-<script src="js/script.js"></script>
+<script>
+    const burger = document.getElementById('burger');
+    const navMobile = document.getElementById('navMobile');
+    burger.addEventListener('click', () => {
+        burger.classList.toggle('open');
+        navMobile.classList.toggle('open');
+    });
+    navMobile.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            burger.classList.remove('open');
+            navMobile.classList.remove('open');
+        });
+    });
+</script>
 </body>
 </html>

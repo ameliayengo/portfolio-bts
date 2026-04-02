@@ -1,22 +1,39 @@
 .her {
-    height: 100vh;
-    background-size: cover; 
+    min-height: 100vh;
+    background-size: cover;
     background-position: center;
-
     display: flex;
-    justify-content: center;  /* centre horizontalement */
-    align-items: flex-end;    /* place le contenu en bas */
-    padding-bottom: 110px;     /* espace entre le bas et le texte */
+    justify-content: center;
+    align-items: center;
+    padding: 100px 60px 60px;
 }
-
-.her .texte  {
-    text-align: center;       /* centre le texte à l'intérieur de la div */
-    margin-bottom:50px ;            /* supprime ton margin-top fixe */
-    background-color:rgba(0, 0, 0, 0);
-
+.her .texte {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.45);
+    border-radius: 15px;
+    padding: 30px 40px;
+    max-width: 800px;
 }
-
 .her p {
     font-size: 18px;
     color: #fbfdfc;
+    line-height: 1.8;
+}
+
+/* ===========================
+   RESPONSIVE MOBILE
+=========================== */
+@media (max-width: 768px) {
+    .her {
+        padding: 90px 20px 50px;
+        align-items: flex-start;
+    }
+    .her .texte {
+        padding: 20px;
+        text-align: left;
+    }
+    .her p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
 }
