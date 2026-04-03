@@ -1,71 +1,127 @@
+/* HERO */
+
 .hero {
     min-height: 100vh;
-    background-size: cover;
-    background-position: center;
+    background: url('../img/bleu.jpg') center/cover;
     display: flex;
-    align-items: center;
     justify-content: center;
-    padding: 100px 60px 60px;
+    align-items: center;
+    padding: 100px 60px;
 }
-.texte-photo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 60px;
-    max-width: 1100px;
+  .texte-photo {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photo,
+    .texte-desktop {
+        display: none;
+    }
+
+    .texte-mobile {
+        display: flex;
+        flex-direction: column;
+        padding-top: 50px;
+        gap: 70px;
+        width: 100%;
+    }
+
+    .bloc {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+        background: rgba(0,0,0,0.5);
+        padding: 15px;
+        border-radius: 22px;
+    }
+
+    .bloc img {
+        width: 120px;
+        height: 120px;
+        border-radius: 10px;
+    }
+
+    .bloc p {
+        color: white;
+        font-size: 19px;
+    }
+
+.motivation {
     width: 100%;
-}
-.photo {
     display: flex;
-    flex-direction: column;
-    gap: 17px;
-    flex-shrink: 0;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(22, 31, 55, 0.9);
+    padding: 10px 30px;
+    flex-wrap: wrap;
+    gap: 10px;
 }
-.photo .img {
-    width: 220px;
-    height: 140px;
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.nav-links .img {
+    width: 45px;
+    height: 45px;
     object-fit: cover;
-    padding: 8px;
-    border-radius: 20px;
+    margin: 5px;
+    border-radius: 50%;
 }
-.texte {
-    max-width: 500px;
-    background: rgba(13, 12, 12, 0);
-    border-radius: 10px;
+.motivation .bas {
+    color: #5eb857;
+    font-size: 14px;
+    text-align: right;
+    padding: 5px 0;
+}
+.motivation .coucou {
     color: #ffffff;
-    text-align: left;
-    font-size: 16px;
-    line-height: 1.7;
+}
+.motivation .caca {
+    color: #f9f2f9;
 }
 
-/* ===========================
-   RESPONSIVE MOBILE
-=========================== */
+/* ================= MOBILE ================= */
+
 @media (max-width: 768px) {
-    .hero {
-        padding: 90px 20px 50px;
-        align-items: flex-start;
-    }
+
     .texte-photo {
         flex-direction: column;
+        gap: 20px;
+    }
+
+    .photo,
+    .texte-desktop {
+        display: none;
+    }
+
+    .texte-mobile {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .bloc {
+        display: flex;
         align-items: center;
-        gap: 25px;
+        gap: 15px;
+        background: rgba(0,0,0,0.5);
+        padding: 12px;
+        border-radius: 12px;
     }
-    .photo {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+
+    .bloc img {
+        width: 100px;
+        height: 100px;
+        border-radius: 10px;
+        object-fit: cover;
     }
-    .photo .img {
-        width: 95px;
-        height: 95px;
-        padding: 5px;
-    }
-    .texte {
-        max-width: 100%;
+
+    .bloc p {
+        color: white;
         font-size: 14px;
-        line-height: 1.6;
-        text-align: center;
     }
 }
