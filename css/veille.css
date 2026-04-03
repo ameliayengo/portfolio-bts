@@ -123,6 +123,12 @@ body {
     margin: 20px auto;
     border-radius: 15px;
 }
+.blog-section img {
+    max-width: 400px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
 
 /* FOOTER */
 .motivation {
