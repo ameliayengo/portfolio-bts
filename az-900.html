@@ -38,13 +38,18 @@
 <section class="texte-img" style="background-image: url('img/bleu.jpg');">
     <div class="image">
         <img src="https://www.webasha.com/uploads/course/images/633ac973268df1664797043.AZ900_Training-and-certification.jpg" alt="Certification AZ-900">
-        <p class="texte">L'AZ-900 est la certification Microsoft Azure Fundamentals. Elle vérifie que tu comprends les bases du cloud computing, comment fonctionne Azure (stockage, machines virtuelles, réseaux, etc.) J'ai acquis :<br><br>
+        
+        <a href="projets.html" class="btn-retour">← Retour</a>
+
+        <p class="texte">
+            L'AZ-900 est la certification Microsoft Azure Fundamentals. Elle vérifie que tu comprends les bases du cloud computing, comment fonctionne Azure (stockage, machines virtuelles, réseaux, etc.) J'ai acquis :<br><br>
             ✔️ Une compréhension claire du cloud<br>
             ✔️ Une vision globale d'une infrastructure cloud<br>
             ✔️ Des bases solides en sécurité cloud<br>
             ✔️ Une capacité à analyser les coûts<br>
             ✔️ Un vocabulaire technique professionnel
         </p>
+        
     </div>
 </section>
 
@@ -70,10 +75,12 @@
 <script>
     const burger = document.getElementById('burger');
     const navMobile = document.getElementById('navMobile');
+
     burger.addEventListener('click', () => {
         burger.classList.toggle('open');
         navMobile.classList.toggle('open');
     });
+
     navMobile.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             burger.classList.remove('open');
@@ -81,5 +88,6 @@
         });
     });
 </script>
+
 </body>
 </html>

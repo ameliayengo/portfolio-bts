@@ -124,4 +124,9 @@
         color: white;
         font-size: 14px;
     }
+    
+    .motivation { flex-direction: column; text-align: center; }
+    .nav-links { justify-content: center; }
+    .nav-links .img { width: 36px; height: 36px; }
+    .motivation .bas { text-align: center; font-size: 12px; }
 }

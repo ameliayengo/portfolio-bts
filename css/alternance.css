@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center; /* centre horizontal */
     align-items: flex-end;   /* descend en bas */
-    padding-bottom: 20px;    /* petit espace du bas */
+    padding-bottom: 150px;    /* petit espace du bas */
 
 }
 .her .texte {
